@@ -1,0 +1,22 @@
+def binarysearch(key array min max)
+	if max < min
+		return -1	
+
+	midpoint = findmidpoint(min max)
+	
+	if array[midpoint] < key
+		binaryserach(key, array, midpoint, max)
+	elsif
+		binarysearch(key, array, min, midpoint-1)
+	else
+		midpoint
+end
+
+
+min - left until no more nodes
+max - right until no more nodes
+
+case: no children - delete
+			left only - child becomes child or parent
+			two children - next largest value, swap nodes to make leaf
+
